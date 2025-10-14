@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moonsun Demo Store • Websites for Nepali Shops</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f8ff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #004cbf;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #a5d4ff;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0078ff, #003d99);
+      color: white;
+      text-align: center;
+      padding: 160px 20px 120px;
+      margin-top: 60px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #004cbf;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #004cbf;
+      color: white;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #004cbf;
+      margin-bottom: 20px;
+    }
+
+    /* FEATURES */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .feature-card {
+      background: white;
+      border-left: 6px solid #0078ff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* PROCESS */
+    .steps {
+      max-width: 700px;
+      margin: 20px auto;
+      text-align: left;
+      font-size: 1.1rem;
+    }
+    .steps li { margin-bottom: 10px; }
+
+    /* PRICING */
+    .price-box {
+      background: white;
+      border: 2px solid #0078ff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .price-box h3 {
+      color: #004cbf;
+      font-size: 1.5rem;
+    }
+    .price-box h1 {
+      font-size: 2.5rem;
+      color: #0078ff;
+      margin: 15px 0;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #eaf2ff;
+      padding: 25px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+    .contact-box a {
+      color: #004cbf;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #003d99;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #a5d4ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Moonsun Demo Store</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Websites for Every Nepali Shop</h2>
+    <p>Modern, Fast & Affordable Websites — Only Rs. 200!</p>
+    <a href="#contact" class="btn">Purchase Now</a>
+  </header>
+
+  <section id="about">
+    <h2>About Our Service</h2>
+    <p>
+      Moonsun Demo Store helps Nepali shops and local businesses go online easily.
+      Whether you're a grocery, clothing, hardware, or electronics store — we design
+      websites that build trust, attract customers, and increase sales.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Our Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">📱 Mobile-Friendly & Fast Loading</div>
+      <div class="feature-card">🛒 Product & Service Pages</div>
+      <div class="feature-card">📍 Google Maps & Location Integration</div>
+      <div class="feature-card">💬 WhatsApp Direct Chat</div>
+      <div class="feature-card">🔒 Secure Hosting Setup</div>
+      <div class="feature-card">🌐 Domain & Email Support</div>
+      <div class="feature-card">💼 Built for Nepali Businesses</div>
+      <div class="feature-card">⚡ Delivered Within 1 Day</div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>How It Works</h2>
+    <ol class="steps">
+      <li>1️⃣ Message us on WhatsApp or Email.</li>
+      <li>2️⃣ Share your shop name, logo (if any), and details.</li>
+      <li>3️⃣ We build your full website within 1 day.</li>
+      <li>4️⃣ You get your live link to share with customers!</li>
+    </ol>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing Plan</h2>
+    <div class="price-box">
+      <h3>Starter Plan</h3>
+      <p>Perfect for small Nepali stores</p>
+      <h1>Rs. 200</h1>
+      <ul>
+        <li>✔️ Full Shop Website</li>
+        <li>✔️ WhatsApp + Email Support</li>
+        <li>✔️ Custom Domain Help</li>
+        <li>✔️ 3 Days Free Updates</li>
+      </ul>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to build your website today? Contact below 👇</p>
+    <div class="contact-box">
+      <p><strong>📧 Email:</strong> <a href="mailto:moonsunofficial7@gmail.com">moonsunofficial7@gmail.com</a></p>
+      <p><strong>📞 Phone:</strong> <a href="tel:+9779841830231">+977 9841830231</a></p>
+      <p><strong>💬 Facebook:</strong> <a href="https://facebook.com/MoonsunPandey" target="_blank">Moonsun Pandey</a></p>
+      <a href="https://wa.me/9779841830231" class="btn">Message on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Moonsun Demo Store • Made in Nepal 🇳🇵</p>
+    <p>Contact: <a href="mailto:moonsunofficial7@gmail.com">moonsunofficial7@gmail.com</a> • 
+       <a href="https://facebook.com/MoonsunPandey" target="_blank">Facebook</a> • 
+       <a href="tel:+9779841830231">+977 9841830231</a></p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      nav.style.background = window.scrollY > 50 ? '#003a9c' : '#004cbf';
+    });
+  </script>
+
+</body>
+</html>
