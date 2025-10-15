@@ -292,6 +292,50 @@
     min-height: auto;
   }
 }
+    /* 🌈 Creative Section Styling for Nepali Shop Demo */
+.creative-section {
+  text-align: center;
+  background: linear-gradient(180deg, #f8faff, #e6f0ff);
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin: 40px 10px;
+}
+
+.creative-section h2 {
+  color: #004aad;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.creative-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.creative-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.creative-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.creative-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.creative-card h3 {
+  color: #0077ff;
+  margin-bottom: 8px;
+}
   </style>
 </head>
 <body>
@@ -344,7 +388,29 @@
       <li>3️ We build your full website within 1 day.</li>
       <li>4️ You get your live link to share with customers!</li>
     </ol>
-  </section>
+  </section><section class="creative-section">
+  <h2>✨ Make Your Local Shop Online Today!</h2>
+  <p>अब तपाईंको पसल पनि अनलाइन बनाउनुहोस् — हामी बनाउन मद्दत गर्छौं ❤️</p>
+
+  <div class="creative-boxes">
+    <div class="creative-card">
+      <h3>🏪 किराना पसल</h3>
+      <p>Local grocery stores can get more customers with home delivery and online menu.</p>
+    </div>
+    <div class="creative-card">
+      <h3>👕 कपडा पसल</h3>
+      <p>Upload photos of your fashion items and start selling via WhatsApp.</p>
+    </div>
+    <div class="creative-card">
+      <h3>🍛 रेस्टुरेन्ट</h3>
+      <p>Show your menu, Google Map location, and get daily online orders easily.</p>
+    </div>
+    <div class="creative-card">
+      <h3>🛒 सुपरमार्केट</h3>
+      <p>Let nearby customers find your products online and order instantly.</p>
+    </div>
+  </div>
+</section>
 
   <section id="pricing">
     <h2>Pricing Plan</h2>
@@ -397,6 +463,9 @@
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
+  <p style="text-align:center; font-size:1rem; color:#333; margin-top:40px;">
+🇳🇵 Designed in Nepal • Perfect for every Nepali shop owner
+</p>
 </body>
 </html>
 </body>
