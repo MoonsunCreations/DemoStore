@@ -271,6 +271,62 @@
       nav.style.background = window.scrollY > 50 ? '#003a9c' : '#004cbf';
     });
   </script>
+  /* 📱 MOBILE FIXES */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero {
+    padding: 120px 15px 100px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+
+  button, .btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto;
+  }
+}
 
 </body>
 </html>
