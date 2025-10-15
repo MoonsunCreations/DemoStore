@@ -256,6 +256,42 @@
   opacity: 1;
   transform: translateY(0);
 }
+    /* 📱 Mobile header and pricing visibility fix */
+@media (max-width: 768px) {
+
+  /* 🔹 Make header smaller */
+  header {
+    padding: 8px 12px;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+
+  header nav a {
+    font-size: 0.9rem;
+    margin: 0 6px;
+  }
+
+  /* 🔹 Reduce top spacing so pricing/contact are fully visible */
+  .pricing-section, .contact-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  /* 🔹 Ensure body scrolls properly on phones */
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* 🔹 Fix layout height if anything overlaps */
+  main, section {
+    min-height: auto;
+  }
+}
   </style>
 </head>
 <body>
