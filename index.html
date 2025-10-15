@@ -179,7 +179,20 @@
     }
     /* 📱 MOBILE FIXES */
 @media (max-width: 768px) {
-  /* 📱 MOBILE FIX FOR PRICING PLAN */
+  body { font-size: 15px; }
+  .navbar { flex-direction: column; text-align: center; }
+  .navbar a { display: block; margin: 8px 0; }
+  .hero { padding: 120px 15px 100px; }
+  .hero h2 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .section { padding: 60px 15px; }
+  .features { flex-direction: column; gap: 20px; }
+  .feature-card { width: 100%; }
+  .footer-content { flex-direction: column; gap: 10px; }
+  .contact-info { font-size: 0.9rem; }
+  button, .btn { width: 100%; max-width: 280px; margin: 10px auto; }
+}
+    /* 📱 MOBILE FIX FOR PRICING PLAN + ✨ ANIMATIONS */
 @media (max-width: 768px) {
   .pricing-section {
     padding: 60px 15px;
@@ -232,18 +245,16 @@
     background: #005fd1;
   }
 }
-  body { font-size: 15px; }
-  .navbar { flex-direction: column; text-align: center; }
-  .navbar a { display: block; margin: 8px 0; }
-  .hero { padding: 120px 15px 100px; }
-  .hero h2 { font-size: 2rem; }
-  .hero p { font-size: 1rem; }
-  .section { padding: 60px 15px; }
-  .features { flex-direction: column; gap: 20px; }
-  .feature-card { width: 100%; }
-  .footer-content { flex-direction: column; gap: 10px; }
-  .contact-info { font-size: 0.9rem; }
-  button, .btn { width: 100%; max-width: 280px; margin: 10px auto; }
+
+/* ✨ FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
   </style>
 </head>
@@ -301,7 +312,7 @@
 
   <section id="pricing">
     <h2>Pricing Plan</h2>
-    <div class="price-box">
+    <div class="pricing-card fade-in">
       <h3>Starter Plan</h3>
       <p>Perfect for small Nepali stores</p>
       <h1>Rs. 200</h1>
@@ -339,6 +350,18 @@
       nav.style.background = window.scrollY > 50 ? '#003a9c' : '#004cbf';
     });
   </script>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
 
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
 </body>
 </html>
