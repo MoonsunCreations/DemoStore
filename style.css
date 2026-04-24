@@ -1,23 +1,17 @@
-body {
-  position: relative;
-  overflow-x: hidden;
+.trust-banner {
+  background: #fff8e1;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
 }
 
-.doodle-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 300px;
-  height: 200px;
-  background: #f7d774;
-
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  z-index: -1;
+.trust-banner .stars {
+  color: #f4b400;
+  margin-right: 8px;
 }
 
-.line-doodle {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 200px;
+.trust-banner .text {
+  color: #333;
 }
